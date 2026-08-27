@@ -23,6 +23,29 @@
     .address-bar {
         flex: 1;
     }
+
+    .pane-actions {
+        margin-left: auto;
+        display: flex;
+        gap: 4px;
+    }
+
+    &.minimal {
+        padding: 0;
+
+        .pane-action {
+            padding: 0 4px;
+            border: none;
+            background: transparent;
+            font-size: 11px;
+            line-height: 18px;
+            opacity: 0.4;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .url-prompt {
@@ -40,6 +63,17 @@
         gap: 8px;
         width: 100%;
         max-width: 480px;
+    }
+
+    .url-prompt-actions {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+    }
+
+    &.editing {
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
     }
 }
 
@@ -73,4 +107,9 @@
 .view-host {
     flex: 1;
     min-height: 0;
+    outline: none;
+
+    &.split {
+        margin: 5px;
+    }
 }
