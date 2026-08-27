@@ -1,6 +1,6 @@
 {
   "name": "tabby-browser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Render a web browser tab inside Tabby",
   "keywords": [
     "tabby-plugin",
